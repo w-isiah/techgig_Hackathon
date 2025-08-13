@@ -1,0 +1,71 @@
+/* Mobile-First Design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#weather-info {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#stopwatch-display, #timer-display {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Hide Weather in Portrait Mode */
+@media (orientation: portrait) {
+    #weather {
+        display: none;
+    }
+}
+
+/* Show Weather Only in Landscape Mode */
+@media (orientation: landscape) {
+    #weather {
+        display: block;
+    }
+    #stopwatch {
+        display: block;
+    }
+    #clock {
+        display: none;
+    }
+    #timer {
+        display: none;
+    }
+}

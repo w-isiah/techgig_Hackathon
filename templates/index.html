@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Device Orientation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Alarm Clock Section (Portrait - Upright) -->
+        <div id="clock" class="feature">
+            <h2>Alarm Clock</h2>
+            <div id="current-time">00:00:00</div>
+        </div>
+
+        <!-- Stopwatch Section (Landscape - Right Side Up) -->
+        <div id="stopwatch" class="feature">
+            <h2>Stopwatch</h2>
+            <div id="stopwatch-display">00:00</div>
+            <button id="start-stopwatch">Start</button>
+            <button id="reset-stopwatch">Reset</button>
+        </div>
+
+        <!-- Timer Section (Portrait - Upside Down) -->
+        <div id="timer" class="feature">
+            <h2>Timer</h2>
+            <input type="number" id="timer-input" placeholder="Enter time in seconds" />
+            <button id="start-timer">Start Timer</button>
+            <div id="timer-display">00:00</div>
+        </div>
+
+        <!-- Weather Section (Landscape) -->
+        <div id="weather" class="feature">
+            <h2>Weather</h2>
+            <div id="weather-info">Fetching weather...</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
