@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # API Key for OpenWeatherMap
-API_KEY = '43ad00e0cde9cb8af83b90f932926850'
+API_KEY = ''
 CITY = 'kampala'  # Change to your desired city
 
 @app.route('/')
